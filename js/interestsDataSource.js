@@ -1,5 +1,5 @@
 function generateInterest() {
-    var data = ["Blockchain", "CrossFit", "GoT", "Audio Books"]
+    var data = ["Blockchain", "CrossFit", "GoT", "Audio Books", "Learning", "Badminton", "Table Tennis", "Football"]
     var element = document.getElementById("interestElement")
     data.forEach((item) => {
         element.innerHTML += `<li>
