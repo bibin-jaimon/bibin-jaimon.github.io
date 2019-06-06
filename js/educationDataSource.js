@@ -1,4 +1,3 @@
-
 function EducationDataModel(universityName, degreeType, specilization, cgpa, date) {
     this.universityName = universityName
     this.degreeType = degreeType
@@ -6,7 +5,6 @@ function EducationDataModel(universityName, degreeType, specilization, cgpa, dat
     this.cgpa = cgpa
     this.date = date
 }
-
 function generateEducationData() {
     const data = [new EducationDataModel("Govt. Engg College Kannur",
         "B.Tech", 
