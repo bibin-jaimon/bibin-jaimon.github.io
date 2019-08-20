@@ -7,7 +7,8 @@ function ExperienceDataModel(position, company, date, description) {
 
 function generateExperience() {
     var data = [
-        new ExperienceDataModel("iOS Engineer", "QBurst", "May 2018 - Present", "description")
+        new ExperienceDataModel("iOS developer", "QBurst", "May 2018 - Present", "description"),
+        new ExperienceDataModel("Full stack developer intern", "Hasura", "May 2017 - June 2017", "description")
     ]
     var element = document.getElementById("experienceDetails")
 
