@@ -1,1 +1,1 @@
-web: node mock-api.js
+web: node server.js
