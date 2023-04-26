@@ -12,42 +12,79 @@ function ExperienceDataModel(
   this.companyWebsiteLink = companyWebsiteLink;
 }
 
+// const getX = () => {
+//   const position = ""
+//   const company = ""
+//   const startDate = ""
+//   const endDate = ""
+//   const website = ""
+//   const description = ""
+//   return {
+//       position,
+//       company,
+//       date: `${startDate} - ${endDate}`,
+//       description,
+//       companyWebsiteLink: website
+//     }
+// }
+
+const getQburst = () => {
+  const position = "Senior Engineer"
+  const company = "Qburst Technologies Pvt. Ltd."
+  const startDate = "May 2018"
+  const endDate = "Sep 2021"
+  const website = "https://www.qburst.com/"
+  const description = ""
+  return {
+      position,
+      company,
+      date: `${startDate} - ${endDate}`,
+      description,
+      companyWebsiteLink: website
+    }
+}
+
+const getVymo = () => {
+  const position = "Member Of Technical Staff"
+  const company = "Vymo Technologies Pvt. Ltd."
+  const startDate = "Sep 2021"
+  const endDate = "Mar 2022"
+  const website = "https://vymo.com/"
+  const description = ""
+  return {
+      position,
+      company,
+      date: `${startDate} - ${endDate}`,
+      description,
+      companyWebsiteLink: website
+    }
+}
+
+const getDeloitte = () => {
+  const position = "Consultant"
+  const company = "Deloitte US - India offices"
+  const startDate = "Mar 2021"
+  const endDate = "Present"
+  const website = "https://www2.deloitte.com/ui/en.html"
+  const description = ""
+  return {
+      position,
+      company,
+      date: `${startDate} - ${endDate}`,
+      description,
+      companyWebsiteLink: website
+    }
+}
+
+
 function generateExperience() {
   var data = [
-    new ExperienceDataModel(
-      "Mobile App developer",
-      "QBurst",
-      "May 2018 - Present",
-      `
-        Working as a Mobile Application Developer for client projects<br /><br />
-        Tech: Swift, Java, Kotlin, React Native, JavaScript<br />
-
-        Platform: iOS, Android
-        <p>
-        - Coordinate with the Technical Lead on current project tasks<br />
-        - Collaborate with other programmers to design and implement features<br />
-        - Debug existing source code, polish feature sets, and optimize the current workflow<br />
-        - Continuously learn and improve skills<br />
-        - Carrying out all tasks with high attention to detail and making sure they meet the highest standards
-        </p>
-        `,
-      "https://www.qburst.com/"
-    ),
-    new ExperienceDataModel(
-      "Java Application Developer",
-      "Bharat Heavy Electricals Limited",
-      "Oct 2017- Oct 2017",
-      "Developed file backup application using Java, Swing",
-      "https://www.bhel.com/"
-    ),
-    new ExperienceDataModel(
-      "Product Development Intern",
-      "Hasura",
-      "May 2017 - June 2017",
-      "Build and test simple web application using Hasura platform",
-      "https://hasura.io/"
-    ),
+    getDeloitte(),
+    getVymo(),
+    getQburst()
   ];
+
+  console.log({data})
   var element = document.getElementById("experienceDetails");
 
   data.forEach((item) => {
