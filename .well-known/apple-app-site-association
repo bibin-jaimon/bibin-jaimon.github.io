@@ -1,0 +1,20 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "XYZ12389S.com.mobile.app.UniveralLinking.qa",
+        "paths": ["*"]
+      },
+      {
+        "appID": "XYZ12389S.com.mobile.app.UniveralLinking",
+        "components": [
+          {
+            "/": "/index.html",
+            "comment": "Open app when user taps on https://bibin-jaimon.github.io/"
+          }
+        ]
+      }
+    ]
+  }
+}
