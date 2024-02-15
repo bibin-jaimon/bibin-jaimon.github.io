@@ -29,62 +29,73 @@ function ExperienceDataModel(
 // }
 
 const getQburst = () => {
-  const position = "Senior Engineer"
-  const company = "Qburst Technologies Pvt. Ltd."
-  const startDate = "May 2018"
-  const endDate = "Sep 2021"
-  const website = "https://www.qburst.com/"
-  const description = ""
+  const position = "Senior Engineer";
+  const company = "Qburst Technologies Pvt. Ltd.";
+  const startDate = "May 2018";
+  const endDate = "Sep 2021";
+  const website = "https://www.qburst.com/";
+  const description = "";
   return {
-      position,
-      company,
-      date: `${startDate} - ${endDate}`,
-      description,
-      companyWebsiteLink: website
-    }
-}
+    position,
+    company,
+    date: `${startDate} - ${endDate}`,
+    description,
+    companyWebsiteLink: website,
+  };
+};
 
 const getVymo = () => {
-  const position = "Member Of Technical Staff"
-  const company = "Vymo Technologies Pvt. Ltd."
-  const startDate = "Sep 2021"
-  const endDate = "Mar 2022"
-  const website = "https://vymo.com/"
-  const description = ""
+  const position = "Member Of Technical Staff";
+  const company = "Vymo Technologies Pvt. Ltd.";
+  const startDate = "Sep 2021";
+  const endDate = "Mar 2022";
+  const website = "https://vymo.com/";
+  const description = "";
   return {
-      position,
-      company,
-      date: `${startDate} - ${endDate}`,
-      description,
-      companyWebsiteLink: website
-    }
-}
+    position,
+    company,
+    date: `${startDate} - ${endDate}`,
+    description,
+    companyWebsiteLink: website,
+  };
+};
 
 const getDeloitte = () => {
-  const position = "Consultant"
-  const company = "Deloitte US - India offices"
-  const startDate = "Mar 2021"
-  const endDate = "Present"
-  const website = "https://www2.deloitte.com/ui/en.html"
-  const description = ""
+  const position = "Consultant";
+  const company = "Deloitte US - India offices";
+  const startDate = "Mar 2021";
+  const endDate = "Feb 2024";
+  const website = "https://www2.deloitte.com/ui/en.html";
+  const description = "";
   return {
-      position,
-      company,
-      date: `${startDate} - ${endDate}`,
-      description,
-      companyWebsiteLink: website
-    }
-}
+    position,
+    company,
+    date: `${startDate} - ${endDate}`,
+    description,
+    companyWebsiteLink: website,
+  };
+};
 
+const getFox = () => {
+  const position = "SDE II (L2)";
+  const company = "Fox Corporation";
+  const startDate = "Feb 2024";
+  const endDate = "Present";
+  const website = "https://www.foxcorporation.com/";
+  const description = "";
+  return {
+    position,
+    company,
+    date: `${startDate} - ${endDate}`,
+    description,
+    companyWebsiteLink: website,
+  };
+};
 
 function generateExperience() {
-  var data = [
-    getDeloitte(),
-    getVymo(),
-    getQburst()
-  ];
+  var data = [getFox(), getDeloitte(), getVymo(), getQburst()];
 
-  console.log({data})
+  console.log({ data });
   var element = document.getElementById("experienceDetails");
 
   data.forEach((item) => {
